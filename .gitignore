@@ -1,0 +1,76 @@
+# LifeVault .gitignore
+
+# Environment files - NEVER commit secrets
+.env
+.env.local
+.env.production
+server/.env
+mobile/.env
+
+# Node modules
+node_modules/
+mobile/node_modules/
+server/node_modules/
+
+# React Native
+mobile/android/app/build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/android/captures/
+mobile/android/.externalNativeBuild/
+mobile/android/.cxx/
+mobile/android/app/.cxx/
+.cxx/
+mobile/android/key.properties
+
+# iOS
+mobile/ios/build/
+mobile/ios/Pods/
+mobile/ios/*.xcworkspace/xcuserdata/
+mobile/ios/*.xcodeproj/xcuserdata/
+mobile/.xcode.env.local
+
+# Hermes
+mobile/android/app/src/main/assets/index.android.bundle
+mobile/android/app/src/main/assets/index.android.bundle.map
+
+# Metro
+mobile/.metro-cache/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/settings.json
+*.suo
+*.user
+*.aps
+
+# Build artifacts
+dist/
+build/
+*.apk
+screen_*.png
+
+# Testing
+coverage/
+
+# Temporary files
+tmp/
+temp/
